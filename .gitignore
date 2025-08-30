@@ -1,0 +1,45 @@
+--- General ---
+Ignore OS-specific files
+.DS_Store
+Thumbs.db
+--- Python & Databricks ---
+Ignore virtual environment folders
+/venv/
+/env/
+/.venv/
+Ignore Python bytecode and cache
+pycache/
+*.py[cod]
+*$py.class
+Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+Ignore build artifacts
+/dist/
+/build/
+*.egg-info/
+--- IDEs ---
+Ignore Visual Studio Code settings
+.vscode/
+Ignore JetBrains (PyCharm, IntelliJ) settings
+.idea/
+--- Sensitive Information ---
+Ignore environment files containing secrets
+.env
+.env
+.env.
+Ignore files with credentials or keys
+*credentials.json
+*secrets.json
+*keys.txt
+*.pem
+--- Terraform/IaC (Good practice for the future) ---
+Ignore Terraform state files
+*.tfstate
+.tfstate.
+.terraform/
+--- Large Files ---
+It's good practice to not commit large data or report files.
+Consider using Git LFS (Large File Storage) for the .pbix file if it's large.
+For now, we are assuming the .pbix file is small enough to be committed.
+Ignore any large local data files (keep sample data committed)
+data/large_dataset.csv

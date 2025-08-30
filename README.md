@@ -25,6 +25,8 @@ The AdventureWorks company struggled with data inconsistency and scattered infor
 | **Python (PySpark)** | Transformation Language       | Primary language used within Databricks for all data manipulation logic.    |
 | **SQL** | Querying Language             | Used in Synapse Analytics and Databricks for data querying and validation.  |
 
+## Change
+
 ## 4. Architecture
 The pipeline is designed around a Medallion Architecture, ensuring data quality and governance by progressively refining data through Bronze, Silver, and Gold layers.
 

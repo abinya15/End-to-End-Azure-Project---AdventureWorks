@@ -1,0 +1,54 @@
+[
+  {
+     "p_rel_url" : "anshlambaoldgit/Adventure-Works-Data-Engineering-Project/refs/heads/main/Data/AdventureWorks_Calendar.csv",
+     "p_folder" : "calender",
+     "p_filename" : "calender.csv"
+  },
+   
+   {
+     "p_rel_url" : "anshlambaoldgit/Adventure-Works-Data-Engineering-Project/782fcf9b48faacd0f3b6ce0df165e6ec09c67859/Data/AdventureWorks_Customers.csv",
+     "p_folder" : "customers",
+     "p_filename" : "customers.csv"
+  },
+
+  {
+     "p_rel_url" : "anshlambaoldgit/Adventure-Works-Data-Engineering-Project/refs/heads/main/Data/AdventureWorks_Product_Categories.csv",
+     "p_folder" : "product_categories",
+     "p_filename" : "product_categories.csv"
+  },
+
+  {
+     "p_rel_url" : "anshlambaoldgit/Adventure-Works-Data-Engineering-Project/refs/heads/main/Data/AdventureWorks_Product_Subcategories.csv",
+     "p_folder" : "Product_Subcategories",
+     "p_filename" : "Product_Subcategories.csv"
+  },
+
+  {
+     "p_rel_url" : "anshlambaoldgit/Adventure-Works-Data-Engineering-Project/refs/heads/main/Data/AdventureWorks_Returns.csv",
+     "p_folder" : "Returns",
+     "p_filename" : "Returns.csv"
+  },
+    
+  {
+     "p_rel_url" : "anshlambaoldgit/Adventure-Works-Data-Engineering-Project/refs/heads/main/Data/AdventureWorks_Sales_2015.csv",
+     "p_folder" : "Sales_2015",
+     "p_filename" : "Sales_2015.csv"
+  },
+  {
+     "p_rel_url" : "anshlambaoldgit/Adventure-Works-Data-Engineering-Project/refs/heads/main/Data/AdventureWorks_Sales_2016.csv",
+     "p_folder" : "Sales_2016",
+     "p_filename" : "Sales_2016.csv"
+  },
+  {
+     "p_rel_url" : "anshlambaoldgit/Adventure-Works-Data-Engineering-Project/refs/heads/main/Data/AdventureWorks_Sales_2017.csv",
+     "p_folder" : "Sales_2017",
+     "p_filename" : "Sales_2017.csv"
+  },
+
+  {
+     "p_rel_url" : "anshlambaoldgit/Adventure-Works-Data-Engineering-Project/refs/heads/main/Data/AdventureWorks_Territories.csv",
+     "p_folder" : "Territories",
+     "p_filename" : "Territories.csv"
+  }
+    
+ ]

@@ -1,0 +1,88 @@
+----
+--CREATE CALENDAR VIEW
+-------
+CREATE VIEW gold.calendar
+AS
+SELECT *
+FROM OPENROWSET(
+        BULK 'https://pp1advworkds.dfs.core.windows.net/silver/calendar',
+        FORMAT = 'parquet'
+) as calenderquery
+
+----
+--CREATE CUSTOMER VIEW
+-------
+CREATE VIEW gold.customer
+AS
+SELECT *
+FROM OPENROWSET(
+        BULK 'https://pp1advworkds.dfs.core.windows.net/silver/customer',
+        FORMAT = 'parquet'
+) as customerquery
+
+----
+--CREATE CATEGORIES VIEW
+-------
+CREATE VIEW gold.categories
+AS
+SELECT *
+FROM OPENROWSET(
+        BULK 'https://pp1advworkds.dfs.core.windows.net/silver/categories',
+        FORMAT = 'parquet'
+) as catquery
+
+----
+--CREATE PRODUCT_SUBCATEGORIES VIEW
+-------
+CREATE VIEW gold.pro_subcat
+AS
+SELECT *
+FROM OPENROWSET(
+        BULK 'https://pp1advworkds.dfs.core.windows.net/silver/product_subcategories',
+        FORMAT = 'parquet'
+) as prosubcatquery
+
+
+----
+--CREATE PRODUCTS VIEW
+-------
+CREATE VIEW gold.products
+AS
+SELECT *
+FROM OPENROWSET(
+        BULK 'https://pp1advworkds.dfs.core.windows.net/silver/products',
+        FORMAT = 'parquet'
+) as productquery
+
+----
+--CREATE RETURNS VIEW
+-------
+CREATE VIEW gold.awreturns
+AS
+SELECT *
+FROM OPENROWSET(
+        BULK 'https://pp1advworkds.dfs.core.windows.net/silver/returns',
+        FORMAT = 'parquet'
+) as returnsquery
+
+----
+--CREATE SALES VIEW
+-------
+CREATE VIEW gold.sales
+AS
+SELECT *
+FROM OPENROWSET(
+        BULK 'https://pp1advworkds.dfs.core.windows.net/silver/sales',
+        FORMAT = 'parquet'
+) as salesquery
+
+----
+--CREATE TERRITORIES VIEW
+-------
+CREATE VIEW gold.territories
+AS
+SELECT *
+FROM OPENROWSET(
+        BULK 'https://pp1advworkds.dfs.core.windows.net/silver/territories',
+        FORMAT = 'parquet'
+) as terrquery

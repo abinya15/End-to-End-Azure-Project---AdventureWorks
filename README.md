@@ -31,7 +31,7 @@ The pipeline is designed around a Medallion Architecture, ensuring data quality 
 
 ![alt text](image-1.png)
 
-Data Flow:
+### Data Flow:
 
 * Ingest (Bronze): A dynamic Azure Data Factory pipeline fetches raw CSV files from source GitHub URLs. Using Lookup and ForEach activities, the pipeline iterates through a list of files and lands them in the Bronze layer of Azure Data Lake Gen2.
 
@@ -75,8 +75,6 @@ These views act as the logical Gold layer, providing a clean, governed, and high
 # 6. Power BI Dashboard Showcase
 The final dashboard connects to the Synapse views and offers insights into AdventureWorks' operations.
 
-(Here, insert high-quality screenshots of your Power BI dashboard.)
-
 Example Placeholder 1: AdventureWorks Sales Overview
 
 Example Placeholder 2: Product Performance Analysis
@@ -95,7 +93,7 @@ An active Azure Subscription.
 
 Power BI Desktop installed.
 
-Clone this repository: git clone [your-repo-link]
+Clone this repository: git clone (https://github.com/abinya15/End-to-End-Azure-Project---AdventureWorks)
 
 Deploy the Azure resources (ADF, ADLS, Databricks, Synapse).
 

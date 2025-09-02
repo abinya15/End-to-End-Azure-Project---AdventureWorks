@@ -84,20 +84,9 @@ Example Placeholder 2: Product Performance Analysis
 Example Placeholder 2: Product Details
 
 # 7. Repository Structure
-.
-├── adf/                      # Contains ARM templates or JSON definitions for ADF pipelines
-│   └── git.json
-         pipeline/
-│       └── PL_Dynamic_Ingest_From_GitHub.json
-├── databricks/               # Databricks notebooks for ETL
-│   └── notebooks/
-│       └── 01_Bronze_to_Silver.ipynb
-├── synapse/                  # SQL scripts for Synapse Analytics
-│   └── sql/
-│       └── create_gold_layer_views.sql
-├── powerbi/                  # Power BI report file (.pbix)
-│   └── AdventureWorks_Analytics.pbix
-└── README.md                 # This documentation
+
+<img width="712" height="294" alt="image" src="https://github.com/user-attachments/assets/719647b6-c9e7-499e-846c-e4b0b760d691" />
+
 
 # 8. How to Replicate
 To replicate this project, you will need:

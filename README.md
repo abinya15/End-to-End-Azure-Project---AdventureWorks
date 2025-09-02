@@ -26,7 +26,7 @@ The AdventureWorks company struggled with data inconsistency and scattered infor
 | **SQL** | Querying Language             | Used in Synapse Analytics and Databricks for data querying and validation.  |
 
 
-## 4. Architecture
+# 4. Architecture
 The pipeline is designed around a Medallion Architecture, ensuring data quality and governance by progressively refining data through Bronze, Silver, and Gold layers.
 
 ![alt text](image-1.png)
@@ -41,7 +41,7 @@ Data Flow:
 
 Visualize: Power BI connects directly to the Azure Synapse Analytics serverless endpoint, querying the Gold layer views to generate real-time, interactive dashboards for business users.
 
-5. Project Workflow & Data Pipeline
+# 5. Project Workflow & Data Pipeline
 Step 1: Dynamic Data Ingestion (ADF)
 
 A single, reusable Azure Data Factory pipeline, PL_Dynamic_Ingest_From_GitHub, was created.
@@ -72,7 +72,7 @@ Each view directly queries a corresponding Delta table in the Silver layer (e.g.
 
 These views act as the logical Gold layer, providing a clean, governed, and high-performance SQL endpoint for Power BI without needing to move and duplicate data.
 
-6. Power BI Dashboard Showcase
+# 6. Power BI Dashboard Showcase
 The final dashboard connects to the Synapse views and offers insights into AdventureWorks' operations.
 
 (Here, insert high-quality screenshots of your Power BI dashboard.)
@@ -83,7 +83,7 @@ Example Placeholder 2: Product Performance Analysis
 
 Example Placeholder 2: Product Details
 
-7. Repository Structure
+# 7. Repository Structure
 .
 ├── adf/                      # Contains ARM templates or JSON definitions for ADF pipelines
 │   └── git.json
@@ -99,7 +99,7 @@ Example Placeholder 2: Product Details
 │   └── AdventureWorks_Analytics.pbix
 └── README.md                 # This documentation
 
-8. How to Replicate
+# 8. How to Replicate
 To replicate this project, you will need:
 
 An active Azure Subscription.
@@ -118,7 +118,7 @@ Execute the create_gold_layer_views.sql script in your Synapse workspace.
 
 Update the Power BI file to connect to your Synapse serverless SQL endpoint.
 
-9. Future Improvements
+# 9. Future Improvements
 CI/CD: Implement CI/CD pipelines using Azure DevOps or GitHub Actions to automate the deployment of all resources (ARM templates), Databricks notebooks, and Synapse SQL scripts.
 
 Data Quality Checks: Integrate a data quality framework like Great Expectations to run automated checks within the Databricks notebooks to validate data as it moves from Bronze to Silver.

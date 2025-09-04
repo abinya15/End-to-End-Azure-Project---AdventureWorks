@@ -42,7 +42,8 @@ The pipeline is designed around a Medallion Architecture, ensuring data quality 
 Visualize: Power BI connects directly to the Azure Synapse Analytics serverless endpoint, querying the Gold layer views to generate real-time, interactive dashboards for business users.
 
 # 5. Project Workflow & Data Pipeline
-Step 1: Dynamic Data Ingestion (ADF)
+
+### Step 1: Dynamic Data Ingestion (ADF)
 
 A single, reusable Azure Data Factory pipeline, PL_Dynamic_Ingest_From_GitHub, was created.
 
@@ -52,7 +53,7 @@ A ForEach Loop iterates over the output of the Lookup activity.
 
 Inside the loop, a parameterized Copy Data Activity dynamically constructs the source URL and destination path, copying each file into the bronze/ directory in ADLS Gen2. This approach makes the pipeline metadata-driven and easily scalable to new data sources.
 
-Step 2: Data Transformation (Databricks)
+### Step 2: Data Transformation (Databricks)
 
 The notebook Bronze_to_Silver.ipynb is executed after the ingestion pipeline completes.
 
@@ -62,7 +63,7 @@ It reads the raw data from the Bronze layer, performs necessary cleaning operati
 
 The cleaned, structured data is written to the silver/ directory as Delta tables, providing reliability and performance benefits.
 
-Step 3: Data Serving via Synapse Views (Gold Layer)
+### Step 3: Data Serving via Synapse Views (Gold Layer)
 
 An Azure Synapse Analytics workspace is set up and linked to the ADLS Gen2 account.
 
@@ -75,7 +76,7 @@ These views act as the logical Gold layer, providing a clean, governed, and high
 # 6. Power BI Dashboard Showcase
 The final dashboard connects to the Synapse views and offers insights into AdventureWorks' operations.
 
-Adventure Works: Retail Sales & Operations Dashboard
+### Adventure Works: Retail Sales & Operations Dashboard
 
 A comprehensive Power BI dashboard built using the Adventure Works dataset to provide key insights into retail sales and operational performance.
 
@@ -87,7 +88,7 @@ Product Performance: A bar chart breaks down orders by category, while a separat
 
 Operational Metrics: The bottom section provides a snapshot of month-over-month changes for key metrics like revenue and orders, with a focus on returns. A detailed table provides a granular view of product-level sales and return rates.
 
-![Adv Works Dashboard](https://github.com/user-attachments/assets/01ecf31e-ffd3-4511-bd62-b000e7fa23ce)
+<img width="1274" height="730" alt="image" src="https://github.com/user-attachments/assets/deaccf35-d1b6-45cd-843c-754db7e35f88" />
 
 # 7. Repository Structure
 

@@ -75,11 +75,20 @@ These views act as the logical Gold layer, providing a clean, governed, and high
 # 6. Power BI Dashboard Showcase
 The final dashboard connects to the Synapse views and offers insights into AdventureWorks' operations.
 
-Example Placeholder 1: AdventureWorks Sales Overview
+Adventure Works: Retail Sales & Operations Dashboard
 
-Example Placeholder 2: Product Performance Analysis
+A comprehensive Power BI dashboard built using the Adventure Works dataset to provide key insights into retail sales and operational performance.
 
-Example Placeholder 2: Product Details
+KPIs: At the top, a clear set of cards highlights critical metrics: Revenue, Profit, Orders, Return Rate, and Customer count.
+
+Revenue Trends: The line and area chart visualizes monthly revenue over multiple years, allowing for easy comparison and trend identification.
+
+Product Performance: A bar chart breaks down orders by category, while a separate list highlights top-performing products by type, revenue, and orders.
+
+Operational Metrics: The bottom section provides a snapshot of month-over-month changes for key metrics like revenue and orders, with a focus on returns. A detailed table provides a granular view of product-level sales and return rates.
+
+![Adv Works Dashboard](https://github.com/user-attachments/assets/01ecf31e-ffd3-4511-bd62-b000e7fa23ce)
+![Adv Works Country Dashboard](https://github.com/user-attachments/assets/a9e8d3a2-500f-4f1e-90d8-0bb4c89c146e)
 
 # 7. Repository Structure
 

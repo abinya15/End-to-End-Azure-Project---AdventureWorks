@@ -88,7 +88,6 @@ Product Performance: A bar chart breaks down orders by category, while a separat
 Operational Metrics: The bottom section provides a snapshot of month-over-month changes for key metrics like revenue and orders, with a focus on returns. A detailed table provides a granular view of product-level sales and return rates.
 
 ![Adv Works Dashboard](https://github.com/user-attachments/assets/01ecf31e-ffd3-4511-bd62-b000e7fa23ce)
-![Adv Works Country Dashboard](https://github.com/user-attachments/assets/a9e8d3a2-500f-4f1e-90d8-0bb4c89c146e)
 
 # 7. Repository Structure
 
